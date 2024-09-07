@@ -1,0 +1,27 @@
+lead_capture_task:
+  description: >
+    Capture leads by analyzing social media activity (Instagram) of users who are interested in fitness, beachwear, and lifestyle trends. Focus on nearby cities and women aged 20-50.
+  expected_output: >
+    A list of at least 10 potential leads, with relevant information like username, interests, and city of origin.
+  agent: lead_capturer
+
+customer_reactivation_task:
+  description: >
+    Identify customers who have interacted with our Instagram accounts but haven't made a purchase recently. Re-engage them with a personalized message or offer.
+  expected_output: >
+    A list of re-engaged customers, with their responses or engagement actions.
+  agent: customer_reactivator
+
+new_customer_task:
+  description: >
+    Identify people in nearby cities who post about fashion, fitness, and lifestyle but are not yet customers of Filó. Reach out to them to introduce the brand and create interest.
+  expected_output: >
+    A list of at least 10 new potential customers, with information about their interests and posts.
+  agent: new_customer_analyst
+
+daily_report_task:
+  description: >
+    Collect daily results from all agents, organize them into a structured report, and send a summary for review. Focus on lead generation, customer re-engagement, and new customer outreach.
+  expected_output: >
+    A daily report with a summary of all agents' performance and findings, formatted in markdown.
+  agent: lead_manager

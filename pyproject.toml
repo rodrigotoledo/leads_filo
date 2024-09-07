@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "leads_filo"
+version = "0.1.0"
+description = "leads_filo using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.51.0" }
+
+[tool.poetry.scripts]
+leads_filo = "leads_filo.main:run"
+run_crew = "leads_filo.main:run"
+train = "leads_filo.main:train"
+replay = "leads_filo.main:replay"
+test = "leads_filo.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
